@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Stelaris Games - assistência técnica e venda de videogames no Rio de Janeiro. Seu game em boas mãos." />
+  <title>Stelaris Games | Assistência Técnica e Videogames</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#inicio">
+        <div class="brand-mark">SG</div>
+        <div>
+          <strong>Stelaris Games</strong>
+          <span>Seu game em boas mãos</span>
+        </div>
+      </a>
+
+      <button class="menu-btn" aria-label="Abrir menu" onclick="toggleMenu()">☰</button>
+      <nav id="menu">
+        <a href="#servicos">Serviços</a>
+        <a href="#consoles">Consoles</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#localizacao">Localização</a>
+        <a class="btn btn-small" href="https://wa.me/5521996151748" target="_blank">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Assistência técnica • Compra • Venda</span>
+          <h1>Seu videogame merece <span>tratamento de outro nível.</span></h1>
+          <p>
+            Conserto, manutenção preventiva, upgrades, desbloqueios e venda de consoles seminovos
+            com atendimento especializado no Rio de Janeiro.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="https://wa.me/5521996151748?text=Olá%2C%20vim%20pelo%20site%20da%20Stelaris%20Games%20e%20quero%20um%20orçamento." target="_blank">
+              Pedir orçamento
+            </a>
+            <a class="btn btn-outline" href="#servicos">Ver serviços</a>
+          </div>
+          <div class="trust-row">
+            <span>✓ Orçamento gratuito</span>
+            <span>✓ Nota fiscal</span>
+            <span>✓ Garantia nos serviços</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="console-art">
+            <div class="screen">
+              <div class="pixel pixel-a"></div>
+              <div class="pixel pixel-b"></div>
+              <div class="pixel pixel-c"></div>
+              <span>STELARIS</span>
+            </div>
+            <div class="controller">
+              <span class="stick s1"></span>
+              <span class="stick s2"></span>
+              <span class="btn-dot d1"></span>
+              <span class="btn-dot d2"></span>
+              <span class="btn-dot d3"></span>
+              <span class="btn-dot d4"></span>
+            </div>
+          </div>
+          <div class="hero-card-footer">
+            <strong>Atendimento especializado</strong>
+            <span>PlayStation • Xbox • Nintendo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">O que fazemos</span>
+          <h2>Assistência técnica completa</h2>
+          <p>Diagnóstico cuidadoso, reparo especializado e manutenção para aumentar a vida útil do seu console.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="icon">🛠️</div>
+            <h3>Conserto de consoles</h3>
+            <p>Reparos em PlayStation, Xbox, Nintendo Switch, PSP, PS Vita e outros modelos.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">❄️</div>
+            <h3>Manutenção preventiva</h3>
+            <p>Remoção de poeira, limpeza técnica, troca de pasta térmica ou metal líquido e revisão do sistema de refrigeração.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🎮</div>
+            <h3>Controles</h3>
+            <p>Drift, analógicos, botões, gatilhos, conectores, membranas e outros defeitos.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🔌</div>
+            <h3>HDMI e conectores</h3>
+            <p>Troca e reparo de portas HDMI, USB, conectores de carga e circuitos relacionados.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">💾</div>
+            <h3>Upgrades</h3>
+            <p>Troca e instalação de HD, SSD, armazenamento e melhorias compatíveis com seu aparelho.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">✨</div>
+            <h3>Desbloqueios</h3>
+            <p>Serviços compatíveis com modelos selecionados de consoles, realizados com orientação de uso.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="consoles">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Pronta entrega</span>
+          <h2>Videogames seminovos</h2>
+          <p>Consulte os modelos disponíveis no momento. Estoque rotativo.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product">
+            <div class="product-art playstation">PS</div>
+            <div>
+              <span class="tag">PlayStation</span>
+              <h3>PS2, PS3, PS4 e PS5</h3>
+              <p>Modelos FAT, Slim, Super Slim e versões selecionadas conforme disponibilidade.</p>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-art xbox">X</div>
+            <div>
+              <span class="tag">Xbox</span>
+              <h3>Xbox 360, One e Series</h3>
+              <p>Consoles revisados, testados e prontos para jogar.</p>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-art nintendo">N</div>
+            <div>
+              <span class="tag">Nintendo</span>
+              <h3>Nintendo Switch</h3>
+              <p>Modelos selecionados, acessórios e serviços especializados.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="center">
+          <a class="btn" href="https://wa.me/5521996151748?text=Olá%2C%20quero%20saber%20quais%20videogames%20estão%20disponíveis%20para%20venda." target="_blank">
+            Ver estoque pelo WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container about-grid">
+        <div>
+          <span class="eyebrow">Por que escolher a Stelaris?</span>
+          <h2>Atendimento técnico com transparência</h2>
+          <p>
+            A Stelaris Games trabalha com manutenção, reparo e venda de videogames, oferecendo diagnóstico,
+            explicação do defeito e orientação ao cliente antes da execução do serviço.
+          </p>
+          <ul class="check-list">
+            <li>Orçamento gratuito e sem compromisso</li>
+            <li>Atendimento especializado em videogames</li>
+            <li>Garantia de 3 meses em serviços e vendas seminovas, conforme condições da loja</li>
+            <li>Nota fiscal</li>
+            <li>Atendimento presencial e pelo WhatsApp</li>
+          </ul>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <strong>PlayStation</strong>
+            <span>PS2 • PS3 • PS4 • PS5</span>
+          </div>
+          <div class="stat">
+            <strong>Xbox</strong>
+            <span>360 • One • Series</span>
+          </div>
+          <div class="stat">
+            <strong>Nintendo</strong>
+            <span>Switch • Lite • OLED</span>
+          </div>
+          <div class="stat">
+            <strong>Controles</strong>
+            <span>Reparo e manutenção</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section location" id="localizacao">
+      <div class="container location-card">
+        <div>
+          <span class="eyebrow">Venha nos visitar</span>
+          <h2>Stelaris Games</h2>
+          <p>Rua Francisco Real, 1950 — Loja 213, Real Shopping, Rio de Janeiro - RJ.</p>
+          <p><strong>WhatsApp:</strong> (21) 99615-1748</p>
+          <div class="location-actions">
+            <a class="btn" href="https://wa.me/5521996151748" target="_blank">Falar no WhatsApp</a>
+            <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Rua+Francisco+Real+1950+Rio+de+Janeiro" target="_blank">Abrir no mapa</a>
+          </div>
+        </div>
+
+        <div class="map-placeholder">
+          <span>📍</span>
+          <strong>Real Shopping</strong>
+          <small>Rio de Janeiro - RJ</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner">
+        <div>
+          <span class="eyebrow">Seu videogame deu problema?</span>
+          <h2>Fale com a Stelaris Games.</h2>
+          <p>Envie uma mensagem e conte o que está acontecendo com seu aparelho.</p>
+        </div>
+        <a class="btn btn-light" href="https://wa.me/5521996151748?text=Olá%2C%20vim%20pelo%20site%20e%20preciso%20de%20ajuda%20com%20meu%20videogame." target="_blank">
+          Chamar no WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/5521996151748" target="_blank" aria-label="Abrir WhatsApp">✆</a>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <strong>Stelaris Games</strong>
+        <span>Seu game em boas mãos.</span>
+      </div>
+      <p>© <span id="year"></span> Stelaris Games. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
