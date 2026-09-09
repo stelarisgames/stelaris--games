@@ -1,408 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Stelaris Games | Consultoria e Soluções em Games</title>
-  <meta name="description" content="Consultoria, diagnóstico e soluções para consoles, controles e notebooks. PlayStation, Xbox, Nintendo e muito mais.">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stelaris Games | Centro de Soluções Gamer</title>
+<meta name="description" content="Consultoria, diagnóstico e soluções para consoles, controles e notebooks. PlayStation, Xbox, Nintendo e muito mais.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<header class="header">
-  <div class="container nav">
-    <a href="#inicio" class="brand">
-      <img src="logo-stelaris.jpg" alt="Stelaris Games">
-    </a>
-
-    <button class="menu-button" onclick="toggleMenu()" aria-label="Abrir menu">☰</button>
-
+<header class="topbar">
+  <div class="container nav-wrap">
+    <a href="#inicio" class="brand"><img src="logo-stelaris.jpg" alt="Stelaris Games"></a>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
     <nav id="menu">
+      <a href="#inicio">Início</a>
       <a href="#servicos">Serviços</a>
       <a href="#sobre">Sobre Nós</a>
       <a href="#antes-depois">Antes e Depois</a>
+      <a href="#galeria">Galeria</a>
       <a href="#contato">Contato</a>
     </nav>
-
-    <a class="whatsapp-top"
-       href="https://wa.me/5521996151748?text=Olá%2C%20vim%20pelo%20site%20da%20Stelaris%20Games."
-       target="_blank">
-      WhatsApp<br><strong>(21) 99615-1748</strong>
-    </a>
+    <div class="header-actions">
+      <a class="header-btn whatsapp" href="https://wa.me/5521996151748" target="_blank">✆ <span>Fale conosco<br><strong>(21) 99615-1748</strong></span></a>
+      <a class="header-btn instagram" href="https://instagram.com/stelarisgames" target="_blank">◎ <span>Nos siga<br><strong>@stelarisgames</strong></span></a>
+    </div>
   </div>
 </header>
 
-
 <main>
-
-<!-- HERO -->
 <section class="hero" id="inicio">
-  <div class="hero-orb orb-one"></div>
-  <div class="hero-orb orb-two"></div>
-
   <div class="container hero-grid">
     <div class="hero-copy">
-      <h1>
-        CONSULTORIA E<br>
-        <span class="purple">SOLUÇÕES</span><br>
-        EM <span class="orange">GAMES</span>
-      </h1>
-
-      <p class="hero-description">
-        Atua com consultoria, diagnóstico e soluções para consoles,
-        controles e notebooks, do PlayStation ao Xbox, Nintendo e muito mais.
-      </p>
-
-      <div class="hero-buttons">
-        <a class="btn btn-primary"
-           href="https://wa.me/5521996151748?text=Olá%2C%20quero%20solicitar%20um%20orçamento."
-           target="_blank">
-          Solicitar orçamento →
-        </a>
-
-        <a class="btn btn-outline" href="#servicos">
-          Nossos serviços →
-        </a>
+      <span class="eyebrow">Stelaris Games</span>
+      <h1>CENTRO DE<br><span class="blue">SOLUÇÕES</span> <span class="orange">GAMER</span></h1>
+      <p>Atuamos com consultoria, diagnóstico e soluções para consoles, controles e notebooks. Do PlayStation ao Xbox, Nintendo e muito mais.</p>
+      <div class="hero-features">
+        <span>◈ Diagnóstico especializado</span>
+        <span>⌁ Reparo seguro</span>
+        <span>⚙ Manutenção preventiva</span>
+        <span>☆ Qualidade e confiança</span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-orange" href="https://wa.me/5521996151748" target="_blank">Falar com um especialista →</a>
+        <a class="btn btn-purple" href="https://instagram.com/stelarisgames" target="_blank">Nosso Instagram →</a>
       </div>
     </div>
-
-    <div class="hero-image">
-      <img src="hero-consoles.png"
-           alt="PlayStation 5, Xbox Series S, Nintendo Switch e controles">
+    <div class="hero-visual">
+      <img src="hero-consoles.png" alt="PS5, Xbox Series S e Nintendo Switch">
+      <div class="hero-slogan">SEU GAME<br>EM BOAS MÃOS</div>
     </div>
   </div>
-
-  <div class="container benefits">
-    <div class="benefit">
-      <span class="benefit-icon purple-text">▣</span>
-      <div>
-        <strong>ORÇAMENTO GRATUITO</strong>
-        <small>Avaliação sem compromisso.</small>
-      </div>
-    </div>
-
-    <div class="benefit">
-      <span class="benefit-icon orange-text">⬡</span>
-      <div>
-        <strong>3 MESES DE GARANTIA*</strong>
-        <small>Mais segurança para você.</small>
-      </div>
-    </div>
-
-    <div class="benefit">
-      <span class="benefit-icon blue-text">▤</span>
-      <div>
-        <strong>NOTA FISCAL</strong>
-        <small>Emitimos nos serviços.</small>
-      </div>
-    </div>
-
-    <div class="benefit">
-      <span class="benefit-icon purple-text">⌖</span>
-      <div>
-        <strong>ATENDIMENTO EM BANGU - RJ</strong>
-        <small>Loja física no Real Shopping.</small>
-      </div>
-    </div>
+  <div class="container hero-strip">
+    <span>◷ Atendimento rápido</span>
+    <span>▤ Orçamento sem compromisso</span>
+    <span>⚒ Peças de qualidade</span>
+    <span>♢ Garantia em nossos serviços</span>
   </div>
 </section>
 
-
-<!-- COMO FUNCIONA -->
-<section class="section" id="processo">
+<section class="section" id="servicos">
   <div class="container">
-    <div class="section-heading center">
-      <h2>COMO FUNCIONA</h2>
-      <p>Transparência e segurança em todas as etapas.</p>
+    <div class="section-heading">
+      <span class="eyebrow">Serviços</span>
+      <h2>O QUE <span class="orange">CONSERTAMOS?</span></h2>
+      <p>Confira as principais áreas de atendimento.</p>
     </div>
 
-    <div class="steps">
-      <article class="step purple-border">
-        <span class="step-number">1</span>
-        <h3>1. ORÇAMENTO</h3>
-        <p>Você descreve o problema e fazemos uma análise para informar o orçamento.</p>
-      </article>
+    <div class="repair-grid">
+      <article class="repair-card">🎮<h3>Controles</h3></article>
+      <article class="repair-card">🕹️<h3>Consoles</h3></article>
+      <article class="repair-card">💻<h3>Notebooks</h3></article>
+      <article class="repair-card">▦<h3>Placas</h3></article>
+      <article class="repair-card">⚙<h3>Manutenção Preventiva</h3></article>
+      <article class="repair-card">＋<h3>E muito mais!</h3></article>
+    </div>
 
-      <article class="step orange-border">
-        <span class="step-number orange-bg">2</span>
-        <h3>2. CONSERTO</h3>
-        <p>Após a aprovação, iniciamos o reparo com cuidado técnico e peças adequadas.</p>
-      </article>
-
-      <article class="step blue-border">
-        <span class="step-number blue-bg">3</span>
-        <h3>3. TESTES</h3>
-        <p>Realizamos testes para confirmar que o defeito foi solucionado corretamente.</p>
-      </article>
-
-      <article class="step purple-border">
-        <span class="step-number">4</span>
-        <h3>4. FINALIZAÇÃO</h3>
-        <p>Finalizamos o atendimento com orientação, nota fiscal e garantia aplicável.</p>
-      </article>
+    <div class="platform-grid">
+      <article class="platform-card ps"><span>PlayStation</span><h3>PS5 | PS4 | PS3 | PS2</h3><p>Consoles e controles.</p></article>
+      <article class="platform-card xbox"><span>Xbox</span><h3>Series S/X | One | 360</h3><p>Consoles e controles.</p></article>
+      <article class="platform-card nintendo"><span>Nintendo</span><h3>Switch | Switch Lite</h3><p>Consoles e controles.</p></article>
+      <article class="platform-card notebook"><span>Notebooks</span><h3>Diagnóstico e reparo</h3><p>Gamer e convencionais.</p></article>
     </div>
   </div>
 </section>
 
-
-<!-- SERVIÇOS -->
-<section class="section dark-section" id="servicos">
-  <div class="container">
-    <div class="section-heading center">
-      <h2>NOSSOS SERVIÇOS</h2>
-      <p>Soluções para consoles, controles, notebooks e acessórios.</p>
+<section class="section choose" id="sobre">
+  <div class="container choose-grid">
+    <div>
+      <span class="eyebrow">Sobre nós</span>
+      <h2>POR QUE ESCOLHER <span class="orange">A STELARIS?</span></h2>
+      <p>Trabalhamos com diagnóstico, manutenção e soluções para videogames, controles e notebooks, buscando oferecer um atendimento transparente, técnico e próximo do cliente.</p>
     </div>
-
-    <div class="services-grid">
-
-      <article class="service">
-        <span>🎮</span>
-        <div>
-          <h3>CONSERTO DE CONSOLES</h3>
-          <p>Diagnóstico e reparo em PlayStation, Xbox e Nintendo.</p>
-        </div>
-      </article>
-
-      <article class="service">
-        <span>❄️</span>
-        <div>
-          <h3>MANUTENÇÃO PREVENTIVA</h3>
-          <p>Limpeza, remoção de poeira e troca de pasta térmica ou metal líquido.</p>
-        </div>
-      </article>
-
-      <article class="service">
-        <span>🕹️</span>
-        <div>
-          <h3>CONTROLES</h3>
-          <p>Drift, analógicos, botões, gatilhos, conectores e outros reparos.</p>
-        </div>
-      </article>
-
-      <article class="service">
-        <span>🔌</span>
-        <div>
-          <h3>HDMI E CONECTORES</h3>
-          <p>Troca e reparo de HDMI, USB e outros conectores.</p>
-        </div>
-      </article>
-
-      <article class="service">
-        <span>💾</span>
-        <div>
-          <h3>UPGRADES</h3>
-          <p>HD, SSD, armazenamento e melhorias compatíveis com o aparelho.</p>
-        </div>
-      </article>
-
-      <article class="service">
-        <span>🔓</span>
-        <div>
-          <h3>DESBLOQUEIOS</h3>
-          <p>Serviços para modelos compatíveis, com orientação de uso.</p>
-        </div>
-      </article>
-
-      <article class="service">
-        <span>💻</span>
-        <div>
-          <h3>NOTEBOOKS</h3>
-          <p>Manutenção preventiva, upgrades e reparos selecionados.</p>
-        </div>
-      </article>
-
-      <article class="service">
-        <span>⚙️</span>
-        <div>
-          <h3>REPARO DE PLACAS</h3>
-          <p>Diagnóstico técnico e reparos eletrônicos especializados.</p>
-        </div>
-      </article>
-
+    <div class="choose-list">
+      <div><strong>Equipe especializada</strong><span>Atendimento técnico e diagnóstico cuidadoso.</span></div>
+      <div><strong>Equipamentos profissionais</strong><span>Ferramentas adequadas para cada serviço.</span></div>
+      <div><strong>Transparência</strong><span>Você acompanha as etapas do processo.</span></div>
+      <div><strong>Garantia</strong><span>Aplicável conforme o serviço realizado.</span></div>
+      <div><strong>Nota fiscal</strong><span>Emitida nos serviços.</span></div>
+      <div><strong>Atendimento humanizado</strong><span>Contato fácil e direto com a equipe.</span></div>
     </div>
+    <div class="quote-panel">“Diagnosticamos,<br>explicamos,<br>resolvemos e<br><b>testamos com garantia.</b>”</div>
   </div>
 </section>
 
-
-<!-- ANTES E DEPOIS -->
 <section class="section" id="antes-depois">
   <div class="container">
-
-    <div class="section-heading">
-      <h2>ANTES E DEPOIS</h2>
-      <p>Substitua estes espaços por fotos reais dos serviços da Stelaris Games.</p>
-    </div>
-
+    <div class="section-heading"><span class="eyebrow">Resultados</span><h2>ANTES E DEPOIS</h2></div>
     <div class="before-grid">
-
-      <article class="before-card">
-        <div class="photo-placeholder">
-          <span>ANTES</span>
-        </div>
-        <div class="photo-placeholder after">
-          <span>DEPOIS</span>
-        </div>
-        <h3>Limpeza e manutenção</h3>
-      </article>
-
-      <article class="before-card">
-        <div class="photo-placeholder">
-          <span>ANTES</span>
-        </div>
-        <div class="photo-placeholder after">
-          <span>DEPOIS</span>
-        </div>
-        <h3>Troca de HDMI</h3>
-      </article>
-
-      <article class="before-card">
-        <div class="photo-placeholder">
-          <span>ANTES</span>
-        </div>
-        <div class="photo-placeholder after">
-          <span>DEPOIS</span>
-        </div>
-        <h3>Reparo de controle</h3>
-      </article>
-
+      <article class="before-card"><div class="before-photo"><span>ANTES</span></div><div class="after-photo"><span>DEPOIS</span></div><h3>Controle com drift</h3></article>
+      <article class="before-card"><div class="before-photo"><span>ANTES</span></div><div class="after-photo"><span>DEPOIS</span></div><h3>Console sem ligar</h3></article>
+      <article class="before-card"><div class="before-photo"><span>ANTES</span></div><div class="after-photo"><span>DEPOIS</span></div><h3>Superaquecimento</h3></article>
+      <article class="before-card"><div class="before-photo"><span>ANTES</span></div><div class="after-photo"><span>DEPOIS</span></div><h3>Troca de HDMI</h3></article>
     </div>
   </div>
 </section>
 
-
-<!-- SOBRE -->
-<section class="section dark-section" id="sobre">
-  <div class="container about">
-
-    <div>
-      <span class="eyebrow">SOBRE NÓS</span>
-      <h2>STELARIS GAMES</h2>
-
-      <p>
-        A Stelaris Games trabalha com consultoria, diagnóstico, manutenção
-        e soluções para videogames, controles e notebooks.
-      </p>
-
-      <p>
-        Nosso atendimento busca unir transparência, cuidado técnico e
-        orientação para que cada cliente entenda o serviço realizado.
-      </p>
+<section class="section service-icons" id="galeria">
+  <div class="container">
+    <span class="eyebrow">Soluções</span><h2>O QUE FAZEMOS</h2>
+    <div class="icon-grid">
+      <div>⌕<b>Diagnóstico</b></div><div>🎮<b>Reparo de consoles</b></div><div>🕹️<b>Reparo de controles</b></div><div>⚙<b>Manutenção preventiva</b></div><div>▦<b>Recuperação de placas</b></div><div>🔧<b>Troca de componentes</b></div><div>✦<b>Upgrade</b></div><div>🧼<b>Limpeza e higienização</b></div><div>💼<b>Acessórios</b></div><div>📷<b>Conteúdo e dicas</b></div>
     </div>
-
-    <div class="about-benefits">
-      <div>
-        <strong>GARANTIA</strong>
-        <span>Nos serviços aplicáveis</span>
-      </div>
-
-      <div>
-        <strong>NOTA FISCAL</strong>
-        <span>Transparência no atendimento</span>
-      </div>
-
-      <div>
-        <strong>ATENDIMENTO TÉCNICO</strong>
-        <span>Diagnóstico especializado</span>
-      </div>
-
-      <div>
-        <strong>WHATSAPP</strong>
-        <span>Atendimento rápido</span>
-      </div>
-    </div>
-
   </div>
 </section>
 
-
-<!-- CONTATO -->
 <section class="contact-section" id="contato">
-  <div class="container contact-box">
-
-    <div>
-      <small>Fale com a Stelaris Games</small>
-      <h2>Solicite seu orçamento agora!</h2>
-      <p>Atendimento pelo WhatsApp.</p>
-    </div>
-
-    <div class="contact-info">
-      <div>
-        <strong>WhatsApp</strong>
-        <span>(21) 99615-1748</span>
-      </div>
-
-      <div>
-        <strong>Endereço</strong>
-        <span>Rua Francisco Real, 1950 — Loja 213<br>Real Shopping, Rio de Janeiro - RJ</span>
-      </div>
-
-      <div>
-        <strong>Instagram</strong>
-        <span>@stelarisgames</span>
-      </div>
-    </div>
-
+  <div class="container contact-grid">
+    <article class="contact-card"><span>🚚</span><div><strong>STELARIS RESOLVE</strong><p>Consulte condições de coleta e entrega.</p></div></article>
+    <article class="contact-card"><span>📍</span><div><strong>Nossa localização</strong><p>Rua Francisco Real, 1950, loja 213<br>Rio de Janeiro - RJ</p></div></article>
+    <article class="contact-card"><span>◷</span><div><strong>Horário</strong><p>Consulte pelo WhatsApp.</p></div></article>
+    <article class="contact-card social-card">
+      <a href="https://wa.me/5521996151748" target="_blank">Chamar no WhatsApp →</a>
+      <a href="https://instagram.com/stelarisgames" target="_blank">Seguir no Instagram →</a>
+    </article>
   </div>
 </section>
-
 </main>
 
-
-<a class="floating-whatsapp"
-   href="https://wa.me/5521996151748"
-   target="_blank"
-   aria-label="WhatsApp">
-  ✆
-</a>
-
+<a class="floating-wa" href="https://wa.me/5521996151748" target="_blank">✆</a>
 
 <footer>
-  <div class="container footer-grid">
-
-    <div class="footer-brand">
-      <img src="logo-stelaris.jpg" alt="Stelaris Games">
-      <p>Consultoria e soluções em games.</p>
-    </div>
-
-    <div>
-      <strong>LINKS RÁPIDOS</strong>
-      <a href="#servicos">Serviços</a>
-      <a href="#sobre">Sobre Nós</a>
-      <a href="#antes-depois">Antes e Depois</a>
-      <a href="#contato">Contato</a>
-    </div>
-
-    <div>
-      <strong>SERVIÇOS</strong>
-      <span>Conserto de consoles</span>
-      <span>Manutenção preventiva</span>
-      <span>Controles</span>
-      <span>HDMI e conectores</span>
-      <span>Notebooks</span>
-    </div>
-
-    <div>
-      <strong>CONTATO</strong>
-      <span>(21) 99615-1748</span>
-      <span>Real Shopping - RJ</span>
-      <span>@stelarisgames</span>
-    </div>
-
+  <div class="container footer-wrap">
+    <img src="logo-stelaris.jpg" alt="Stelaris Games">
+    <div><span>Mais que conserto, é solução.</span><strong>Stelaris Games.</strong></div>
+    <div class="footer-social"><a href="https://instagram.com/stelarisgames">Instagram</a><a href="https://wa.me/5521996151748">WhatsApp</a></div>
   </div>
-
-  <div class="container copyright">
-    © <span id="year"></span> Stelaris Games. Todos os direitos reservados.
-  </div>
+  <div class="container footer-bottom">© <span id="year"></span> Stelaris Games. Todos os direitos reservados.</div>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
