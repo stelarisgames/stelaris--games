@@ -726,3 +726,22 @@ footer {
     height: 170px;
   }
 }
+
+
+.photo-real {
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-real img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-real span {
+  position: relative;
+  z-index: 2;
+}
