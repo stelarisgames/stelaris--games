@@ -1,46 +1,23 @@
-STELARIS GAMES — SITE FINAL
-
-ARQUIVOS PRINCIPAIS
-- index.html = textos, seções, links e conteúdo
-- styles.css = cores, tamanhos e aparência
-- script.js = menu do celular
-- logo-stelaris.png = logo da loja
-- hero-consoles.png = imagem principal com PS5, Xbox Series S e Nintendo Switch
-
-COMO SUBIR PARA O GITHUB
-1. Entre no repositório do site.
-2. Faça upload destes 5 arquivos.
-3. Se já existirem arquivos com o mesmo nome, substitua-os.
-4. Clique em Commit changes.
-5. Aguarde alguns minutos.
-6. Abra https://stelarisgames.com.br e atualize a página.
-
-COMO MUDAR TEXTO
-1. No GitHub, clique em index.html.
-2. Clique no lápis (Edit this file).
-3. Localize a frase.
-4. Edite.
-5. Clique em Commit changes.
-
-COMO TROCAR A IMAGEM PRINCIPAL
-1. Prepare outra imagem.
-2. Renomeie para hero-consoles.png.
-3. No repositório, substitua o arquivo antigo.
-4. Commit changes.
-
-COMO TROCAR LOGO
-Faça o mesmo, usando o nome logo-stelaris.png.
-
-WHATSAPP ATUAL
-(21) 99615-1748
-
-DOMÍNIO
-stelarisgames.com.br
-
+STELARIS GAMES — ALTERAÇÕES 06
 
 ALTERAÇÕES DESTA VERSÃO
-- Hero: Centro de Soluções Gamer
-- Hero: nova descrição
-- Botão: Falar com um especialista
-- Conserto de consoles: descrição atualizada
-- HDMI e conectores: renomeado para Reparos e descrição atualizada
+- Removidas todas as menções a "3 meses de garantia".
+- Substituído por "Todos os serviços com garantia".
+- Removidas todas as menções e blocos de "Nota fiscal".
+- Adicionado botão do Instagram no cabeçalho ao lado do WhatsApp.
+- Adicionado botão flutuante do Instagram junto ao WhatsApp.
+- Instagram: @stelarisgames.
+- Fotos de Antes e Depois agora usam object-fit: contain para aparecerem inteiras, sem cortes.
+- Mantidos o tamanho e a posição dos cards.
+
+COMO SUBIR NO GITHUB
+1. Abra o repositório.
+2. Add file > Upload files.
+3. Envie todos os arquivos desta pasta.
+4. Substitua os arquivos antigos quando necessário.
+5. Commit changes.
+6. Aguarde alguns minutos e pressione Ctrl + F5 no site.
+
+- Adicionada seção Avaliações no Google com 6 avaliações reais selecionadas.
+
+- Adicionada seção 'Onde estamos' com Google Maps incorporado e botão para abrir a localização.
