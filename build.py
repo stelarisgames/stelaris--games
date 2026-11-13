@@ -109,7 +109,8 @@ def page(p):
     faq="".join("<details><summary>%s</summary><p>%s</p></details>"%f for f in FAQ)
     dev=' data-device="%s"'%p["dev"] if p["dev"] else ""
     ld=json.dumps({"@context":"https://schema.org","@type":"LocalBusiness","name":"Stelaris Games","url":DOM+"/","telephone":"+55 21 99615-1748","image":DOM+"/img/hero-fachada.webp","address":{"@type":"PostalAddress","streetAddress":"Rua Francisco Real, 1950, Loja 213, Real Shopping","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"15:00"}]},ensure_ascii=False)
-    nav="".join('<a href="%s">%s</a>'%(s,n) for s,n in [("#servicos","Serviços"),("#como-funciona","Como funciona"),("#avaliacoes","Avaliações"),("#duvidas","Dúvidas"),("#local","Como chegar")])
+    L=[("","Início"),("conserto-ps5/","PS5"),("conserto-xbox/","Xbox"),("conserto-controle-drift/","Controles"),("conserto-switch/","Switch")]
+    nav="".join('<a href="/%s"%s>%s</a>'%(sl,' aria-current="page"' if sl==p["slug"] else "",n) for sl,n in L)+'<a href="#local">Como chegar</a>'
     return f'''<!DOCTYPE html>
 <html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -139,11 +140,11 @@ def page(p):
 <div class="step"><h3>Conserto</h3><p>Com a sua aprovação, o reparo começa. Usamos peças novas quando aplicável.</p></div>
 <div class="step"><h3>Testes</h3><p>Testamos o aparelho para confirmar que o defeito foi resolvido.</p></div>
 <div class="step"><h3>Entrega com garantia</h3><p>Você retira o aparelho com orientação de uso e garantia de até 3 meses nos serviços elegíveis.</p></div></div></div></section>
-<section id="diferenciais"><div class="wrap"><h2>Por que escolher a Stelaris</h2><div class="dif"><figure class="bench"><img src="{b}img/tecnica.webp" width="720" height="1362" alt="Técnica da Stelaris fazendo diagnóstico na bancada" loading="lazy"><figcaption>Diagnóstico na bancada da loja</figcaption></figure><div class="difc">
+<section id="diferenciais"><div class="wrap"><h2>Por que escolher a Stelaris</h2><div class="cards cards4">
 <article class="card"><h3>Diagnóstico técnico</h3><p>Identificamos a causa real antes de propor o reparo.</p></article>
 <article class="card"><h3>Transparência</h3><p>Registramos o serviço em foto e vídeo para você ver o que foi feito.</p></article>
 <article class="card"><h3>Peças novas</h3><p>Utilizamos peças novas quando aplicável.</p></article>
-<article class="card"><h3>Garantia</h3><p>Garantia de até 3 meses nos serviços elegíveis.</p></article></div></div></div></section>
+<article class="card"><h3>Garantia</h3><p>Garantia de até 3 meses nos serviços elegíveis.</p></article></div></div></section>
 {ba_sec}
 <section id="avaliacoes"><div class="wrap"><h2>Quem já consertou aqui recomenda</h2><p class="lead">Avaliações reais de clientes no Google.</p><div class="rev">{rev}</div></div></section>
 <section class="alt" id="duvidas"><div class="wrap"><h2>Dúvidas frequentes</h2>{faq}</div></section>
