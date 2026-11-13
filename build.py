@@ -83,6 +83,9 @@ FAQ=[("O orçamento é grátis?","Sim. A avaliação é sem compromisso e você 
 ("Quais aparelhos vocês atendem?","PS5, PS4, PS3, PS2, Xbox Series X/S, One e 360, Switch V1/V2, Lite e OLED, 3DS, 2DS, PSP, PS Vita, controles e notebooks."),
 ("Qual é o horário de atendimento?",HOURS+".")]
 PAIRS=[("limpeza","Limpeza e manutenção"),("hdmi","Troca de HDMI"),("controle","Reparo de controle")]
+GTM=""   # coloque aqui o ID do Google Tag Manager, ex.: "GTM-XXXXXXX"
+CSS=open("assets/style.css",encoding="utf-8").read()
+JS=open("assets/app.js",encoding="utf-8").read()
 def xray(p):
     dv=p["dev"] or "console"
     st="controle" if p["dev"]=="Controle" else "console"
@@ -94,7 +97,7 @@ def xray(p):
     return '<section id="mapa"><div class="wrap"><h2>Toque no ponto com defeito</h2><p class="lead">Veja o que reparamos em cada parte do aparelho e peça o orçamento direto.</p><div class="xr"><div><div class="tabs" role="tablist"><button class="tab" role="tab" data-v="console" aria-selected="%s">Console</button><button class="tab" role="tab" data-v="controle" aria-selected="%s">Controle</button></div><div class="dev" data-v="console"%s>%s%s</div><div class="dev" data-v="controle"%s>%s%s</div></div><div class="hp" aria-live="polite"><small>Selecione um ponto</small><h3 id="hp-t"></h3><p id="hp-d"></p><a class="btn btn-wa" id="hp-a" href="https://wa.me/%s" data-track="whatsapp_mapa">Pedir orçamento</a></div></div></div></section>'%(str(st=="console").lower(),str(st=="controle").lower(),"" if st=="console" else " hidden",sv1,hs(C,"console"),"" if st=="controle" else " hidden",sv2,hs(K,"Controle"),WA)
 def e(s): return s.replace("&","&amp;").replace('"',"&quot;")
 def page(p):
-    b="../" if p["slug"] else ""
+    b="/"
     u=DOM+"/"+p["slug"]
     cards="".join(('<article class="card"><h3>%s</h3><p>%s</p><a %s>%s</a></article>'%(x["t"],x["d"],
       ('href="%s%s" data-track="nav_servico"'%(b,x["h"])) if x["h"] else ('href="https://wa.me/%s" data-msg="%s" data-track="whatsapp_card"'%(WA,e(x["m"]))),
@@ -116,7 +119,7 @@ def page(p):
 <link rel="icon" type="image/png" href="{b}img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{b}assets/style.css">
+<style>{CSS}</style>
 <script type="application/ld+json">{ld}</script></head>
 <body>
 <header class="top"><div class="wrap bar"><a class="brand" href="{b or "./"}"><img src="{b}img/logo.png" alt="Stelaris Games" width="54" height="52"></a><nav aria-label="Principal">{nav}</nav>
@@ -150,11 +153,11 @@ def page(p):
 </main>
 <footer><div class="wrap"><b>Stelaris Games</b><span>CNPJ {CNPJ} · Rua Francisco Real, 1950, Loja 213, Real Shopping, Rio de Janeiro, RJ · (21) 99615-1748 · <a href="https://instagram.com/stelarisgames">@stelarisgames</a></span><span>© Stelaris Games. <a href="{b}privacidade/">Política de privacidade</a></span></div></footer>
 <div class="sticky"><a class="btn btn-wa" href="https://wa.me/{WA}" data-msg="{e(p["msg"])}" data-track="whatsapp_sticky">Orçamento no WhatsApp</a><a class="btn btn-ghost" href="tel:+{WA}" data-track="ligar_sticky">Ligar</a></div>
-<script src="{b}assets/config.js"></script><script src="{b}assets/app.js"></script></body></html>'''
+<script>window.STELARIS={{gtm:"{GTM}",whatsapp:"{WA}"}};</script><script>{JS}</script></body></html>'''
 def w(path,txt):
     os.makedirs(os.path.dirname(path) or ".",exist_ok=True); open(path,"w",encoding="utf-8").write(txt)
 for p in PAGES: w(p["slug"]+"index.html",page(p))
-priv='''<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Política de privacidade | Stelaris Games</title><meta name="robots" content="noindex"><link rel="stylesheet" href="../assets/style.css"></head><body><div class="wrap" style="padding:48px 0;max-width:760px"><p><a href="../">← Voltar ao site</a></p><h1>Política de privacidade</h1>
+priv='''<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Política de privacidade | Stelaris Games</title><meta name="robots" content="noindex"><style>'''+CSS+'''</style></head><body><div class="wrap" style="padding:48px 0;max-width:760px"><p><a href="/">← Voltar ao site</a></p><h1>Política de privacidade</h1>
 <p>A Stelaris Games (CNPJ %s) respeita a sua privacidade e a LGPD (Lei nº 13.709/2018).</p><h2>Dados que coletamos</h2><p>Ao iniciar uma conversa pelo WhatsApp, recebemos as informações que você enviar (nome, telefone, aparelho e descrição do problema). O site também pode usar ferramentas de medição, como Google Tag Manager, Google Ads e Meta Pixel, que registram dados de navegação, como páginas visitadas e cliques.</p><h2>Como usamos</h2><p>Usamos os dados para responder ao seu pedido, realizar o orçamento e o serviço, e medir o desempenho dos nossos anúncios. Não vendemos seus dados.</p><h2>Seus direitos</h2><p>Você pode solicitar acesso, correção ou exclusão dos seus dados pelo WhatsApp (21) 99615-1748.</p><p><i>Texto-modelo: recomendamos revisão por um profissional jurídico.</i></p></div></body></html>'''%CNPJ
 w("privacidade/index.html",priv)
 urls=[DOM+"/"+p["slug"] for p in PAGES]
